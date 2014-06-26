@@ -4,6 +4,8 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 
 $capsule = new Capsule;
 
+$dcn = defined('DB_CONNECTION_NAME') ? DB_CONNECTION_NAME : 'default';
+
 $capsule->addConnection(array(
     'driver'    => DB_DRIVER,
     'host'      => DB_HOST,
@@ -13,7 +15,7 @@ $capsule->addConnection(array(
     'charset'   => DB_CHARSET,
     'collation' => DB_COLLATION,
     'prefix'    => DB_PREFIX,
-), DB_CONNECTION_NAME);
+), $dcn);
 
 // Setup the Eloquent ORM... (optional; unless you've used setEventDispatcher())
 $capsule->bootEloquent();

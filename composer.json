@@ -13,7 +13,14 @@
         "src/load.php"
       ]
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/benallfree/makenv"
+        }
+    ],  
     "require": {
-      "illuminate/database": "*"
+      "illuminate/database": "*",
+      "benallfree/makenv": "*"
     }
 }

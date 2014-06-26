@@ -13,7 +13,7 @@ $capsule->addConnection(array(
     'charset'   => DB_CHARSET,
     'collation' => DB_COLLATION,
     'prefix'    => DB_PREFIX,
-));
+), DB_CONNECTION_NAME);
 
 // Setup the Eloquent ORM... (optional; unless you've used setEventDispatcher())
 $capsule->bootEloquent();

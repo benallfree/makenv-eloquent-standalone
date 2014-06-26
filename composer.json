@@ -1,6 +1,7 @@
 {
     "name": "benallfree/makenv-eloquent-standalone",
     "description": "Standalone bootloader compatible with benallfree/makenv",
+    "license": "MIT",
     "authors": [
         {
             "name": "Ben Allfree",

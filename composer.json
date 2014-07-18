@@ -21,6 +21,6 @@
     ],  
     "require": {
       "illuminate/database": "*",
-      "benallfree/makenv": "*"
+      "vlucas/phpdotenv": "1.0.x"
     }
 }
